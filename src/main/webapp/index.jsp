@@ -11,13 +11,19 @@
     <title>$Title$</title>
   </head>
   <body>
-  <a href="/cal?description=1&price=2&discount=3">Ca</a>
-  Ứng dụng Product Discount Calculator
-  <form action="/cal" method="post">
-    <input type="text" placeholder="Nhập vào mô tả " name="description"> <br>
-    <input type="text" placeholder="Nhập vào giá " name="price"> <br>
-    <input type="text" placeholder="Nhập vào chiết khấu " name="discount"> <br>
-    <input type="submit" value="gửi">
+<%--  <a href="/cal?description=1&price=2&discount=3">Ca</a>--%>
+<%--  <a href="/sum?a=2&b=6">Tính tổng a b</a>--%>
+<%--  Ứng dụng Product Discount Calculator--%>
+<%--  <form action="/cal" method="post">--%>
+<%--    <input type="text" placeholder="Nhập vào mô tả " name="description"> <br>--%>
+<%--    <input type="text" placeholder="Nhập vào giá " name="price"> <br>--%>
+<%--    <input type="text" placeholder="Nhập vào chiết khấu " name="discount"> <br>--%>
+<%--    <input type="submit" value="gửi">--%>
+<%--  </form>--%>
+  <form action="/checkAccount" method="post">
+    <input type="text" name="name"> <br>
+    <input type="text" name="password"> <br>
+    <input type="submit" value="login">
   </form>
   </body>
 </html>
