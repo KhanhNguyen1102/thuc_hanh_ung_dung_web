@@ -8,7 +8,12 @@ import java.io.PrintWriter;
 public class cal extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        double price = Double.parseDouble(request.getParameter("price"));
+        double discount = Double.parseDouble(request.getParameter("discount"));
+        double discountAmount = price*discount*0.01;
+        double discountPrice = price - discountAmount;
+        PrintWriter writer = response.getWriter();
+        writer.println("Giá sau khi chiết khấu là :" + discountPrice);
     }
 
     @Override

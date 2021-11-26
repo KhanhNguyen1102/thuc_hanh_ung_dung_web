@@ -11,6 +11,7 @@
     <title>$Title$</title>
   </head>
   <body>
+  <a href="/cal?description=1&price=2&discount=3">Ca</a>
   Ứng dụng Product Discount Calculator
   <form action="/cal" method="post">
     <input type="text" placeholder="Nhập vào mô tả " name="description"> <br>
